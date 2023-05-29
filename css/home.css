@@ -1,0 +1,447 @@
+@font-face {
+    font-family: "Custom Font";
+    src: url(../assets/fonts/BoldenVan.ttf);
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+    
+}
+body{
+    width: 100%;
+}
+
+#main-container {
+    height: 50vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#main-container::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -30px;
+    width: 100%;
+    height: 52vw;
+    opacity: 0.7;
+    filter: brightness(0.8);
+    background-image: linear-gradient(90deg,
+            #31bdec84, #b48d4aa0), url(../assets/photos/boats-2758962.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    z-index: -99;
+}
+
+  
+#navbar-container {
+    width: 100%;
+    z-index: 999;
+    /* background-color:    white; */
+    top: 0;
+    position: fixed;
+}
+
+.navbar {
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#name {
+    display: flex;
+}
+
+.brand {
+    margin: 0 5px;
+}
+
+.center-logo {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    font-size: 11rem !important;
+    text-shadow: 5px 5px 2px #131313;
+    letter-spacing: 3px;
+    font-family: "Custom Font";
+    font-weight: 100;
+    font-size: 40px;
+    padding: 0 5px;
+    text-decoration: none;
+    color: #d8a040;
+    font-weight: bold;
+}
+#center-plane {
+    position: absolute;
+    width: 250px;
+    left: 20%;
+    height: max-content;
+    z-index: 1000;
+    transform: rotate(-30deg);
+}
+
+#brand-logo {
+    display: none;
+}
+
+.logo {
+    font-size: 40px;
+    padding: 0 5px;
+    text-decoration: none;
+    color: #d8a040;
+    font-weight: bold;
+}
+
+#logo-name {
+    text-shadow: 5px 5px 2px #131313;
+    letter-spacing: 3px;
+    font-family: "Custom Font";
+    font-weight: 100;
+}
+
+
+#nav-links-container {
+    display: flex;
+    align-items: center;
+}
+
+.links {
+    font-size: 1.7rem;
+    margin: auto;
+    padding: 0 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Teko', sans-serif;
+}
+#search{
+    width: 40%;
+    border-radius: 5px;
+    
+
+}
+
+#search input {
+    padding: 5px;
+    font-size: 1.05rem !important;
+    border: 0;
+    /* border-width: 2px; */
+    /* border-style: solid; */
+    /* border-color: #B48E4A; */
+    border-radius: 10px;
+    position: relative;
+    top: -2px;
+    outline: none;
+    width: 80%;
+
+}
+#submit{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.fa-magnifying-glass {
+    font-size: 1.4rem;
+    color: #494949;
+}
+
+#login-button {
+    border: 0;
+    border-radius: 5px;
+    background-color: #d8a040;
+    width: max-content;
+    transition: 0.3s all;
+    border: 3px solid #d8a040;
+}
+
+#login-button:hover {
+    background-color: white;
+}
+
+#login {
+    font-size: 1.35rem;
+    text-decoration: none;
+    color: white;
+    padding: 0 5px;
+    transition: 0.3s all;
+}
+
+#login:hover {
+    color: #d8a040;
+}
+
+#main-writing {
+    height: 170px;
+    margin:50px auto  ;
+    font-family: 'Teko', sans-serif;
+    text-shadow: 2px 2px 5px #000000;
+    text-align: center;
+    background-image: linear-gradient(to left,#f54652a2,#d8a040),url('../assets/photos/blonde-1867768.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 75%;
+}
+
+#writing-1 {
+    font-size: 7rem;
+    color: white;
+    width: 100%;
+    text-align: center;
+
+}
+
+.rule-1{
+    width: 70%;
+    height: 5px;
+    background-color: #d8a040;
+    margin:20px auto ;
+    border-radius: 20px;
+}
+.rule-2{
+    width: 40%;
+    height: 5px;
+    background-color: #d8a040;
+    border-radius: 20px;
+}
+#introduction-container{
+    width: 80%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+}
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+}
+
+.writing{
+    font-size: 5em;
+    color: #494949;
+    font-family: 'Teko', sans-serif;
+    font-weight: lighter;
+}
+
+.card-container{
+    overflow-y: hidden;
+}
+
+.card{
+    box-shadow: 2px 2px 4px black;
+    margin: 10px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+#card-1:hover,#card-2:hover,#card-3:hover,#card-4:hover,#card-5:hover,#card-6:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#activities-container{
+    width: 80%;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    
+}
+.card-container{
+    width: min-content;
+}
+
+#review-container{
+    width: 80%;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#review-gallery{
+    scroll-behavior: smooth;
+    display: flex;
+    overflow-x: scroll;
+    margin: 20px;
+}
+.reviews{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    transition: all 0.5s;
+    flex:none;
+}
+#review-gallery::-webkit-scrollbar{
+    display: none;
+}
+/* #gallery-1{
+    display: grid;
+}
+#gallery-2{
+    display: none;
+} */
+.review{
+    margin: 30px;hot
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* align-content: center; */
+    transition: all 0.4s;
+}
+
+.review:hover{
+    transform: scale(1.1);
+}
+.customer-image{
+    width: 100px;
+    border-radius: 100px;
+}
+
+
+
+#review-gallery-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.arrow{
+    background: none;
+    border: none;
+    width: 70%;
+    cursor: pointer;
+}
+.btn{
+    color: #494949;
+    font-size: 2em;
+}
+
+.written-review{
+    width: 75%;
+    margin: auto;
+    text-decoration: none;
+    color: #494949;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.rule-2{
+    margin: auto;
+}
+
+.name{
+    font-size: 2em;
+    color: #494949;
+}
+
+
+
+
+footer{
+    width: 100%;
+    background-image: url(../assets/photos/blonde-1867768.jpg),linear-gradient(45deg, #d8a040,#31bdec84 );
+}
+
+.content{
+    margin: 20px auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-box{
+    width: 30%;
+}
+.topic{
+    font-size: 3em;
+    color: #494949;
+    font-family: 'Teko', sans-serif;
+    font-weight: lighter;
+    margin: 10px;
+    text-align: center;
+}
+
+.left-box form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.left-box form input[type="email"]{
+    width: 100%;
+    height: 40px;
+    border-radius: 1px;
+    border: none;
+    outline: none;
+    margin: 10px 0;
+}
+
+.left-box form input[type="submit"]{
+    background: #d8a040;
+    width: 100px;
+    border: none;
+    outline: none;
+    margin: 10px 0;
+    font-family: 'Teko', sans-serif;
+    color: #fff;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.left-box form input[type="submit"]::-webkit-scrollbar{
+    display: none;    
+
+}
+
+
+.phone, .email, .media-icons{
+    height: 40px;
+}
+.email a, .phone a, .media-icons s{
+    color: #494949;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+.fas, .fab{
+    font-size: 1.5rem;
+    
+    text-decoration: none;
+    color: #494949;
+}
+
+.media-icons{
+    margin: 30px auto;
+    height: 120px;
+}
+.fab{
+    padding: 20px ;
+    font-size: 4em;
+    transition: all 0.2s;
+}
+
+.fab:hover{
+    transform: scale(1.3);
+    color: #d8a040;
+}
+
+.video{
+    margin: 70px 0;
+    border-radius: 5px;
+    border: 5px solid #d8a040;
+
+}
+.video embed{
+    width: 400px;
+    height: 200px;
+    padding: 10px   ;
+}
