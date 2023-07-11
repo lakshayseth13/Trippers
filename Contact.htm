@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <style>
+        *{
+            font-family: 'Teko', sans-serif;
+        }
+        body{
+            height: 97vh;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            height: 100%;
+        }
+
+        .box {
+            width: 70%;
+            height: 80%;
+            border-radius: 100px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+            display: flex;
+        }
+
+        .left {
+            flex: 1;
+            background-color: #f1f1f1;
+            border-radius: 20px 0 0 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right {
+            flex: 1;
+            background-color: #fff;
+            border-radius: 0 20px 20px 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .image {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 5px;
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contactForm {
+            width: 40%;
+            padding: 40px;
+            background: #fff;
+        }
+
+        .contactForm h1 {
+            font-size: 2.5rem;
+            color: #494949;
+            font-weight: 500;
+        }
+
+        .contactForm .inputBox {
+            position: relative;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .contactForm .inputBox input,
+        .contactForm .inputBox textarea {
+            width: 100%;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            border: none;
+            border-bottom: 2px solid #333;
+            outline: none;
+            resize: none;
+        }
+
+        .contactForm .inputBox span {
+            position: absolute;
+            left: 0;
+            padding: 5px 0;
+            font-size: 20px;
+            margin: 10px 0;
+            pointer-events: none;
+            transition: 0.5s;
+            color: #666;
+        }
+
+        .contactForm .inputBox input:focus~span,
+        .contactForm .inputBox input:focus~span,
+        .contactForm .inputBox textarea:focus~span,
+        .contactForm .inputBox textarea:focus~span {
+            color: #d8a040;
+            font-size: 12px;
+            transform: translateY(-20px);
+        }
+
+        .contactForm .inputBox input[type="submit"] {
+            width: 100px;
+            background: #d8a040;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 25px;
+        }
+        .rule-2{
+    margin:5px 0 ;
+    width: 40%;
+    height: 5px;
+    background-color: #d8a040;
+    border-radius: 20px;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="left">
+                <img class="image" src="assets/photos/contact-img.svg" alt="Image">
+            </div>
+            <div class="contactForm">
+                <form>
+
+                    <h1>Contact Us
+
+                        <div class="rule-2"></div>
+                    </h1>
+
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Phone</span>
+                    </div>
+
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                        <span>Type your Message...</span>
+
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="submit" name="SEND" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

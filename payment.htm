@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/payment.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.4.0-web/css/all.css">
+    <title>Book your package</title>
+</head>
+
+<body>
+    <div id="main-container">
+
+        <div id="navbar-container">
+            <nav class="navbar">
+                <div id="name">
+                    <!-- <div id="logo-container" class="brand">
+                        <a href="" class="logo" id="brand-logo"><i class="fa-solid fa-plane-departure "></i></a>
+                    </div> -->
+                    <div id="brand-name" class="brand">
+                        <a href="home.htm" class="logo" id="logo-name">Trippers</a>
+                    </div>
+                </div>
+                <div id="nav-links-container">
+                    <a href="home.htm" class="links" id="link1">Home</a>
+                    <a href="Contact.htm" class="links" id="link2">Contact Us</a>
+                    <div class="links" id="search">
+                        <input type="text" placeholder="Search">
+                        <button id="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="links" id="login-container">
+                        <button id="login-button">
+                            <a href="login.htm" id="login">Login</a>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="center-title" class="brand">
+            <a class="center-logo" id="center-logo-name"><span id="center-title-1">Book Now</span> </a>
+        </div>
+    </div>
+    <div id="package-details">
+        <div id="details">
+            <span>Water Sports at Vagator Beach [4 + 1 Free Activities] Combo</span>
+            <br>
+            <span><i class="fa-regular fa-clock"></i>2 Hours</span>
+        </div>
+        <div id="price">
+            <span>1599<i class="fa-solid fa-indian-rupee-sign"></i></span>
+
+            <span>Per Adult</span>
+        </div>
+    </div>
+        <div class="container">
+            <form id="form">
+                <div class="row">
+                    <h4>Account</h4>
+                    <div class="input-group input-group-icon">
+                        <input type="text" placeholder="Full Name">
+                        <div class="input-icon">
+                            <i class="fa fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="input-group input-group-icon">
+                        <input type="email" placeholder="Email Address">
+                        <div class="input-icon">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="row">
+                    <h4>Amount to be paid</h4>
+                    <div id="price">
+                        <span>1599<i class="fa-solid fa-indian-rupee-sign"></i></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <h4>Terms and Conditions</h4>
+                    <div class="input-group">
+                        <input id="terms" type="checkbox" required>
+                        <label for="terms">I accept the terms and conditions for signing up to this service, and hereby
+                            confirm I have read the privacy policy.</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <a href="" id="book-link"><button id="book" onclick="show()">Send Enquiry</button></a>
+                </div>
+            </form>
+            <div id="thank">
+                ThankYou for booking with us! <br>
+                Bank and other trip details have been sent on your e-mail.
+            </div>
+        </div>
+
+        <footer>
+            <div class="content">
+                <div class="left-box">
+                    <div class="topic">Subscribe us
+    
+                        <div class="rule-2"></div>
+                    </div>
+                    <form action="#">
+                        <input type="email" placeholder="Enter email address">
+                        <input type="submit" name="" value="Send">
+    
+                    </form>
+                    <div class="topic">Contact us
+                        <div class="rule-2"></div>
+                    </div>
+                    <div class="phone">
+                        <i class="fas fa-phone-volume"></i><a href="#">+007 9089 6767</a>
+                    </div>
+                    <div class="email">
+                        <i class="fas fa-envelope"></i><a href="#">abc@gmail.com</a>
+                    </div>
+                    <div class="media-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+    
+                <div class="right-box">
+                    <h1 class="topic">Our YouTube Channel
+                        <div class="rule-2"></div>
+                    </h1>
+                    <div class="video">
+                        <embed src="https://www.youtube.com/embed/J---aiyznGQ?autohide=1&autoplay=1" wmode="transparent"
+                            type="video/mp4" width="100%" height="100%"
+                            allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen title="Keyboard Cat">
+    
+                    </div>
+                </div>
+    
+    
+            </div>
+        </footer>
+
+        <script>
+            function show(){
+                event.preventDefault()
+                document.getElementById("thank").style.display="block"
+                document.getElementById("form").style.display="none"
+            }
+        </script>
+</body>
+
+</html>
