@@ -31,12 +31,12 @@ body{
     width: 100%;
     height: 52vw;
     opacity: 0.7;
-    filter: brightness(0.8);
-    background-image: linear-gradient(90deg,
-            #31bdec84, #b48d4aa0), url(../assets/photos/boats-2758962.jpg);
+    filter: brightness(0.6);
+    background-image: linear-gradient(to right,
+    #FF5B5B, #5BC4FF, #FFD700), url(../assets/photos/temple-1166023.jpg);
     background-repeat: no-repeat;
-    background-position: 50% 0;
-    /* background-attachment: fixed; */
+    /* background-position: 50% 0; */
+    background-attachment: fixed;
     background-size: cover;
     z-index: -99;
 }
@@ -45,6 +45,7 @@ body{
 #navbar-container {
     width: 100%;
     z-index: 999;
+    background-color: white;
     top: 0;
     position: fixed;
 }
@@ -67,17 +68,24 @@ body{
     width: 100%;
     text-align: center;
     position: absolute;
-    top: 30%;
-    font-size: 11rem !important;
-    text-shadow: 5px 5px 2px #131313;
+    top: 20%;
+    text-shadow: 8px 8px 2px #131313;
     letter-spacing: 3px;
-    font-family: "Custom Font";
-    font-weight: 100;
-    font-size: 40px;
     padding: 0 5px;
     text-decoration: none;
+    color: #fff;
+    font-weight: lighter;
+    font-family: 'Teko', sans-serif;
+    font-size: 11rem ;
+}
+#center-title-1{
+    line-height: 1px;
+}
+#center-title-2{
+    line-height: 0;
+    font-family: "Custom Font";
+    font-family: 8rem !important;
     color: #d8a040;
-    font-weight: bold;
 }
 #center-plane {
     position: absolute;
@@ -118,7 +126,7 @@ body{
     margin: auto;
     padding: 0 15px;
     text-decoration: none;
-    color: #ffffff;
+    color: #494949;
     font-family: 'Teko', sans-serif;
 }
 #search{
@@ -177,25 +185,17 @@ body{
     color: #d8a040;
 }
 
-#main-writing {
-    height: 170px;
-    margin:50px auto  ;
+
+#india-paragraph{
+    width: 80%;
+    margin:50px auto ;
     font-family: 'Teko', sans-serif;
-    text-shadow: 2px 2px 5px #000000;
-    text-align: center;
-    background-image: linear-gradient(to left,#f54652a2,#d8a040),url('../assets/photos/blonde-1867768.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 20px;
-    width: 75%;
+    font-size: 2rem;
+    color: #494949;
 }
 
-#writing-1 {
-    font-size: 7rem;
-    color: white;
-    width: 100%;
-    text-align: center;
-
+#welcome{
+    font-size: 3.5rem;
 }
 
 .rule-1{
@@ -206,147 +206,99 @@ body{
     border-radius: 20px;
 }
 .rule-2{
+    margin:5px auto ;
     width: 40%;
     height: 5px;
     background-color: #d8a040;
     border-radius: 20px;
 }
-#introduction-container{
-    width: 80%;
-    margin: 100px auto;
-    display: flex;
-    justify-content: space-between;
+.rule-specific{
+    width: 10%;
+    margin: 0;
 }
-#cards{
-    display: flex;
-    flex-wrap: wrap;
-    width: fit-content;
+#activities-container{
+    width: 80%;
+    margin: 30px auto;
 }
 
-.writing{
-    font-size: 5em;
+.heading{
+    font-size: 3.5rem;
     color: #494949;
+    padding: 10px 0;
     font-family: 'Teko', sans-serif;
     font-weight: lighter;
 }
 
-.card-container{
-    overflow-y: hidden;
-}
-
-.card{
-    box-shadow: 2px 2px 4px black;
-    margin: 10px;
-    border-radius: 5px;
-    transition: all 0.5s;
-}
-#card-1:hover,#card-2:hover,#card-3:hover,#card-4:hover,#card-5:hover,#card-6:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-#activities-container{
-    width: 80%;
-    margin: 100px auto;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+#activities{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
     
 }
-.card-container{
-    width: min-content;
-}
 
-#review-container{
-    width: 80%;
-    margin: 100px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#review-gallery{
-    scroll-behavior: smooth;
-    display: flex;
-    overflow-x: scroll;
-    margin: 20px;
-}
-.reviews{
-    display: grid;
-    grid-template-columns: auto auto auto;
+.activity{
     width: 100%;
-    transition: all 0.5s;
-    flex:none;
-}
-#review-gallery::-webkit-scrollbar{
-    display: none;
-}
-/* #gallery-1{
     display: grid;
-}
-#gallery-2{
-    display: none;
-} */
-.review{
-    margin: 30px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* align-content: center; */
-    transition: all 0.4s;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    margin: 30px 0;
+    gap: 10px;
 }
 
-.review:hover{
-    transform: scale(1.1);
-}
-.customer-image{
-    width: 100px;
-    border-radius: 100px;
-}
-
-
-
-#review-gallery-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.img-container::after{
+    /* content:"GOA"; */
+    position: relative;
+    top: -60%;
+    left: 40%;
+    display: block;
+    font-size: 4rem;
+    font-family: 'Teko', sans-serif;
+    color: #fff;
+    text-shadow: 5px 5px 2px #131313;
 
 }
-.arrow{
-    background: none;
-    border: none;
-    width: 70%;
-    cursor: pointer;
+
+#img-container-1::after{
+    content: "USA";
 }
-.btn{
+#img-container-2::after{
+    content: "FRANCE";
+    left: 30%;
+}
+#img-container-3::after{
+    content: "DUBAI";
+    left: 30%;
+}
+#img-container-4::after{
+    left: 25%;
+    content: "JAPAN";
+}
+#img-container-5::after{
+    left: 25%;
+    content: "RUSSIA";
+}
+
+.img-container img{
+    border-radius: 5px;
+}
+
+.activity-content{
+    margin: 9px;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.5rem;
     color: #494949;
-    font-size: 2em;
 }
 
-.written-review{
-    width: 75%;
-    margin: auto;
+
+.see-more a{
     text-decoration: none;
-    color: #494949;
-    font-size: 1.1rem;
     text-align: center;
-}
-
-.rule-2{
     margin: auto;
 }
-
-.name{
-    font-size: 2em;
-    color: #494949;
+.see-more a i{
+    line-height: 15px;
+    overflow-y: hidden;
 }
-
-
-
-
 footer{
     width: 100%;
     background-image: url(../assets/photos/blonde-1867768.jpg),linear-gradient(45deg, #d8a040,#31bdec84 );
@@ -443,4 +395,8 @@ footer{
     width: 400px;
     height: 200px;
     padding: 10px   ;
+}
+
+.activity-name{
+    font-size: 2rem;
 }
